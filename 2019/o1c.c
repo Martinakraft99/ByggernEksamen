@@ -33,5 +33,5 @@ ISR(PIN_CHANGE_FLAG){
 }
 
 int8_t get_pos(){
-    return positin;
+    return position;
 }
