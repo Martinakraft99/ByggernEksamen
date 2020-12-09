@@ -39,6 +39,6 @@ ISR(TIMER1_COMPB){
 }
 ISR(TIMER2_OVERFLOW){
     start_meas = 1;
-    Disable_comparator() = {CAPTURE_RISING};
+    Disable_comparator();
 
 }

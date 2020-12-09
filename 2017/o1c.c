@@ -26,6 +26,7 @@ ISR(TIMER2_OVERFLOW){
     send_time(sec)
 }
 void send_time(uint32_t time){
+    //Assume struct defined
     CAN_msg_t = msg;
     msg.id = CAN_ID_TIME;
     msg.length = 4;
